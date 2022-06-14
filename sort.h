@@ -27,5 +27,6 @@ void swap(int *, int *);
 void quick_sort(int *, size_t);
 size_t bifurcation(int *, size_t, int *, size_t);
 void quick_sort_true(int *array, size_t size, int *, size_t);
+void shell_sort(int *array, size_t size);
 
 #endif /*SORT_H*/
