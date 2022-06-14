@@ -5,7 +5,6 @@
  * @a: node
  * @b: node
  */
-
 void swap_l(listint_t *a, listint_t *b)
 {
 	a->next = b->next;
@@ -24,12 +23,11 @@ void swap_l(listint_t *a, listint_t *b)
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *tmp = *list, *tmp2 = NULL;
+	listint_t *tmp = NULL, *tmp2 = NULL;
 
-	if (!list || !tmp || !tmp->next)
+	if (!list)
 		return;
-
-	for (; tmp; tmp = tmp->next)
+	for (tmp = *list; tmp; tmp = tmp->next)
 	{
 		tmp2 = tmp;
 		while (tmp2->prev && (tmp2->n < tmp2->prev->n))
