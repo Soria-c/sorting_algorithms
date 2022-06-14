@@ -56,7 +56,7 @@ size_t bifurcation(int *array, size_t size, int *a_print, size_t s)
 {
 	size_t i, p = size - 1, max = 0;
 
-	for (i = 0; i < size - 1; i++)
+	for (i = 0; i < size; i++)
 	{
 		if (array[p] > array[i])
 		{
@@ -75,4 +75,3 @@ size_t bifurcation(int *array, size_t size, int *a_print, size_t s)
 	}
 	return (max);
 }
-
