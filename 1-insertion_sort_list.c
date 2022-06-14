@@ -26,7 +26,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *tmp = *list, *tmp2 = NULL;
 
-	if (!tmp || !list)
+	if (!list || !tmp)
 		return;
 
 	for (; tmp; tmp = tmp->next)
