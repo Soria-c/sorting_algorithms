@@ -20,8 +20,6 @@ void swap(int *a, int *b)
  */
 void quick_sort(int *array, size_t size)
 {
-	if (!array)
-		return;
 	quick_sort_true(array, size, array, size);
 }
 
